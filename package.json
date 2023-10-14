@@ -1,0 +1,50 @@
+{
+  "name": "chrome-dev",
+  "version": "1.4.240",
+  "description": "Launch puppeteer and open your page. npx chrome-dev http://localhost:3000",
+  "keywords": [
+    "cli",
+    "chrome",
+    "puppeteer"
+  ],
+  "homepage": "https://github.com/snomiao/js#readme",
+  "bugs": {
+    "url": "https://github.com/snomiao/js/issues?q=is%3Aissue+is%3Aopen+chrome-dev"
+  },
+  "repository": "https://github.com/snomiao/js",
+  "license": "MIT",
+  "author": "Snowstar Miao <snomiao@gmail.com>",
+  "type": "module",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.js"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "chrome-dev": "dist/cli.js"
+  },
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx snobuild",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "puppeteer": "18.2.1",
+    "yargs": "17.6.0"
+  },
+  "devDependencies": {
+    "snobuild": "^3.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "ca1c2db9974aa48a03d7695327ba73367192028c"
+}
