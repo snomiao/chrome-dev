@@ -33,6 +33,7 @@
   ],
   "scripts": {
     "build": "npx snobuild",
+    "test": "echo todo: test",
     "prepack": "npm run build"
   },
   "dependencies": {
