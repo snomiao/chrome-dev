@@ -7,11 +7,14 @@
     "chrome",
     "puppeteer"
   ],
-  "homepage": "https://github.com/snomiao/js#readme",
+  "homepage": "https://github.com/snomiao/chrome-dev",
   "bugs": {
-    "url": "https://github.com/snomiao/js/issues?q=is%3Aissue+is%3Aopen+chrome-dev"
+    "url": "https://github.com/snomiao/chrome-dev"
   },
-  "repository": "https://github.com/snomiao/js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snomiao/chrome-dev.git"
+  },
   "license": "MIT",
   "author": "Snowstar Miao <snomiao@gmail.com>",
   "type": "module",
@@ -33,8 +36,8 @@
   ],
   "scripts": {
     "build": "npx snobuild",
-    "test": "echo todo: test",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "test": "echo todo: test"
   },
   "dependencies": {
     "dotenv": "16.0.3",
@@ -46,6 +49,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "ca1c2db9974aa48a03d7695327ba73367192028c"
+  }
 }
